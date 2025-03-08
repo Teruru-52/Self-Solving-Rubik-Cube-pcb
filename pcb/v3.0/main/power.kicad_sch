@@ -900,117 +900,6 @@
 				)
 			)
 		)
-		(symbol "JXC_Control_Board-rescue:+3.3V-power"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3V-power"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3V-power_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V-power_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "My_Device:LXDC55FAAA-203"
 			(pin_names
 				(offset 1.016)
@@ -2275,16 +2164,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 96.52) (xy 234.95 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ff7a100-4730-423e-b4f8-0b1e88a0bbe0")
-	)
-	(wire
-		(pts
 			(xy 44.45 114.3) (xy 50.8 114.3)
 		)
 		(stroke
@@ -2482,6 +2361,16 @@
 			(type default)
 		)
 		(uuid "5561cc91-c60f-470b-ac6b-cd7cf252ccb0")
+	)
+	(wire
+		(pts
+			(xy 234.95 111.76) (xy 234.95 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59dd6527-47aa-4617-a863-71759a7716e2")
 	)
 	(wire
 		(pts
@@ -2805,6 +2694,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 102.87) (xy 234.95 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba7e9e1a-d981-4b30-9fde-e35ac06b654f")
+	)
+	(wire
+		(pts
 			(xy 59.69 95.25) (xy 59.69 100.33)
 		)
 		(stroke
@@ -2812,6 +2711,16 @@
 			(type default)
 		)
 		(uuid "be293129-d2f4-4a40-9c18-7f08e842efc7")
+	)
+	(wire
+		(pts
+			(xy 234.95 90.17) (xy 234.95 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be43461e-7aeb-429d-8eeb-2711bd3cc76f")
 	)
 	(wire
 		(pts
@@ -2952,26 +2861,6 @@
 			(type default)
 		)
 		(uuid "ed3cef5d-b3a1-45ff-b97d-8bdf6831eda3")
-	)
-	(wire
-		(pts
-			(xy 234.95 104.14) (xy 234.95 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edc84e0d-5fa2-4348-afca-a7eeef57bda4")
-	)
-	(wire
-		(pts
-			(xy 234.95 111.76) (xy 234.95 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f116dc4c-f19d-4f01-8cca-47fe081c7313")
 	)
 	(wire
 		(pts
@@ -3589,7 +3478,7 @@
 				)
 			)
 		)
-		(property "Footprint" "My_Device:LXDC55FAAA-203"
+		(property "Footprint" "mylib:LXDC55FAAA203"
 			(at 109.22 91.44 0)
 			(effects
 				(font
@@ -3943,7 +3832,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 234.95 99.06 0)
+		(at 234.95 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3951,7 +3840,7 @@
 		(dnp no)
 		(uuid "31d69f66-ea1d-4aba-9cd5-329bffef975a")
 		(property "Reference" "R13"
-			(at 236.4486 97.8916 0)
+			(at 236.4486 108.0516 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3960,7 +3849,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 236.4486 100.203 0)
+			(at 236.4486 110.363 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3969,7 +3858,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 234.95 99.06 0)
+			(at 234.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3978,7 +3867,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 99.06 0)
+			(at 234.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3987,7 +3876,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 99.06 0)
+			(at 234.95 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4206,6 +4095,71 @@
 			(project ""
 				(path "/1630ca0c-51c9-4aeb-9f5b-af64c3de63e1/ff32423c-492c-45a2-9d86-d0144faa09a1"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 257.81 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f9f1d1e-f9ee-4968-9d02-00cf86a2c9ec")
+		(property "Reference" "#PWR066"
+			(at 257.81 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 257.81 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 257.81 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "207704b9-1054-4b2c-8993-285c6baa0279")
+		)
+		(instances
+			(project "main"
+				(path "/1630ca0c-51c9-4aeb-9f5b-af64c3de63e1/ff32423c-492c-45a2-9d86-d0144faa09a1"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -5491,7 +5445,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 234.95 107.95 270)
+		(at 234.95 99.06 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5500,7 +5454,7 @@
 		(dnp no)
 		(uuid "e7d01026-b842-41a5-a859-7d3c3abfbc2b")
 		(property "Reference" "D7"
-			(at 236.982 106.9594 90)
+			(at 236.982 98.0694 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5509,7 +5463,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 236.982 109.2708 90)
+			(at 236.982 100.3808 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5518,7 +5472,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 234.95 107.95 0)
+			(at 234.95 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5527,7 +5481,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 107.95 0)
+			(at 234.95 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5536,7 +5490,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 234.95 107.95 0)
+			(at 234.95 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5751,71 +5705,6 @@
 			(project "main"
 				(path "/1630ca0c-51c9-4aeb-9f5b-af64c3de63e1/ff32423c-492c-45a2-9d86-d0144faa09a1"
 					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "JXC_Control_Board-rescue:+3.3V-power")
-		(at 257.81 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f6b2dc18-31f3-4ea9-b0ed-c2592d47d595")
-		(property "Reference" "#PWR066"
-			(at 257.81 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 258.191 85.7758 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 257.81 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bfaadc86-4053-4095-9e9f-99ffcbfacf94")
-		)
-		(instances
-			(project "main"
-				(path "/1630ca0c-51c9-4aeb-9f5b-af64c3de63e1/ff32423c-492c-45a2-9d86-d0144faa09a1"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)
